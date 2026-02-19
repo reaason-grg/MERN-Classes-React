@@ -7,7 +7,7 @@ const Menu = () => {
 
   const getRecipes = async () => {
     try {
-      const res = await axios.get("https://dummyjson.com/recipes?limit=10");
+      const res = await axios.get("https://dummyjson.com/recipes?limit=100");
       setRecipes(res.data.recipes);
     } catch (error) {
       console.log(error);
